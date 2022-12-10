@@ -1,17 +1,18 @@
-package web_account.adapter.out.persistense;
+package main_d.adapter.out.persistence;
 
-import domain.Account;
-import web_account.application.port.out.LoadAccount;
-import web_account.application.port.out.UpdateAccount;
 import lombok.RequiredArgsConstructor;
+import main_d.Account;
+import main_d.application.port.out.LoadAccount;
+import main_d.application.port.out.UpdateAccount;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityNotFoundException;
 
 @RequiredArgsConstructor
-@Repository
+@Component
 class AccountAdapter implements LoadAccount, UpdateAccount{
+
 	private final AccountJpaRepository accountJpaRepository;
 
 	//A common reference must be saved for optimistic lock(@version ) to work on .save()
@@ -19,7 +20,7 @@ class AccountAdapter implements LoadAccount, UpdateAccount{
 
 	@Autowired
 	private Account accountDomain;
-	
+
 	@Override
 	public Account loadAccount(int id) {
 		account = accountJpaRepository.findById(id).orElseThrow(EntityNotFoundException::new);
@@ -30,5 +31,6 @@ class AccountAdapter implements LoadAccount, UpdateAccount{
 	public void updateAccount(Account accountUpdated) {
 		accountJpaRepository.save(account.update(accountUpdated));
 	}
+
 	
 }

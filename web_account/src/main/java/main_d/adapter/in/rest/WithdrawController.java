@@ -1,8 +1,8 @@
-package web_account.adapter.in.rest;
+package main_d.adapter.in.rest;
 
-import web_account.application.dto.CommandBalanceDTO;
-import web_account.application.port.in.WithdrawUseCase;
 import lombok.RequiredArgsConstructor;
+import main_d.application.dto.CommandBalanceDTO;
+import main_d.application.port.in.WithdrawUseCase;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

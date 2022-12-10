@@ -1,9 +1,10 @@
-package web_account.adapter.out.persistense;
+package main_d.adapter.out.persistence;
 
-import domain.Account;
 import lombok.Data;
+import main_d.Account;
 
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "account")

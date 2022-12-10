@@ -26,6 +26,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <dependency>
+            <groupId>tsechelidisMichail</groupId>
+            <artifactId>web_account</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

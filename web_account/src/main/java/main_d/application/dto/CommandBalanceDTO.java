@@ -1,4 +1,4 @@
-package web_account.application.dto;
+package main_d.application.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

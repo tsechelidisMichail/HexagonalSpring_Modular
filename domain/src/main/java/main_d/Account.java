@@ -1,4 +1,4 @@
-package domain;
+package main_d;
 
 public interface Account {
 

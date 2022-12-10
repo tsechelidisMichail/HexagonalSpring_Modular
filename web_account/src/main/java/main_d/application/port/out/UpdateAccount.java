@@ -1,6 +1,6 @@
-package web_account.application.port.out;
+package main_d.application.port.out;
 
-import domain.Account;
+import main_d.Account;
 
 public interface UpdateAccount {
 	void updateAccount(Account account);
