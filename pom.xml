@@ -25,6 +25,7 @@
         <module>domain_imp</module>
         <module>web_account</module>
         <module>main</module>
+        <module>web_accountList</module>
     </modules>
 
     <properties>

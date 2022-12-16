@@ -35,6 +35,11 @@ public class AccountImp implements Account {
 	}
 
 	@Override
+	public Account newAccount(int id, int balance) {
+		return new AccountImp().update(id, balance);
+	}
+
+	@Override
 	public Integer getBalance() {
 		return this.balance;
 	}

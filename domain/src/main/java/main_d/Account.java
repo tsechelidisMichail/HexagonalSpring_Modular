@@ -8,6 +8,8 @@ public interface Account {
 
 	Account update(int id,int balance);
 
+	Account newAccount(int id, int balance);
+
 	Integer getBalance();
 
 	Integer getId();
