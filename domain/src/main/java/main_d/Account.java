@@ -14,6 +14,4 @@ public interface Account {
 
 	Integer getId();
 
-
-
 }
