@@ -1,4 +1,4 @@
-package main_d.adapter.out.persistence;
+package main_d.adapter.out.persistence.primary;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

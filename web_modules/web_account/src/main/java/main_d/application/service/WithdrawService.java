@@ -7,10 +7,12 @@ import main_d.application.port.in.WithdrawUseCase;
 import main_d.application.port.out.queries.LoadAccount;
 import main_d.application.port.out.queries.UpdateAccount;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
-@Transactional
+@Transactional("primaryTransactionManager")
+@EnableTransactionManagement
 @Service
 class WithdrawService implements WithdrawUseCase {
     private final LoadAccount loadAccount;

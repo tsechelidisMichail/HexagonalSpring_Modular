@@ -1,4 +1,4 @@
-package main_d.adapter.out.persistence;
+package main_d.adapter.out.persistence.primary;
 
 import lombok.RequiredArgsConstructor;
 import main_d.Account;

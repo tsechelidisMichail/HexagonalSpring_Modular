@@ -41,6 +41,40 @@ public abstract class DBemulation {
                     ) LIMIT 1;""";
             stmt.executeUpdate(query);
 
+            secondDb();
+        }catch( SQLException e ){
+            //
+        }
+
+
+    }
+
+    private static void secondDb(){
+        try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/", USER, PASSWORD);
+            Statement stmt = conn.createStatement()) {
+            String query = "CREATE DATABASE IF NOT EXISTS movies;";
+            try{stmt.executeUpdate(query);}catch(Exception e) {
+                //
+            }
+
+            query = "USE movies;";
+            try{stmt.executeUpdate(query);}catch(Exception e) {
+                //
+            }
+
+            query = "CREATE TABLE IF NOT EXISTS movie(id int PRIMARY KEY, name varchar(255), version int);";
+            try{stmt.executeUpdate(query);}catch(Exception e) {
+                //
+            }
+
+            query = """
+                    INSERT INTO movie (id, name, version)
+                    SELECT * FROM (SELECT 1, "test", 0) AS tmp
+                    WHERE NOT EXISTS (
+                        SELECT id FROM movie WHERE id = 1
+                    ) LIMIT 1;""";
+            stmt.executeUpdate(query);
+
 
         }catch( SQLException e ){
             //

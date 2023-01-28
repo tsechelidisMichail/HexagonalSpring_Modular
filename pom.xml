@@ -27,6 +27,8 @@
         <module>main</module>
         <module>persistence_modules/application_port_out_queries</module>
         <module>persistence_modules/adapter_out_persistence_databasePrimary</module>
+        <module>web_modules/web_movie</module>
+        <module>persistence_modules/adapter_out_persistence_databaseSecondary</module>
     </modules>
 
     <properties>

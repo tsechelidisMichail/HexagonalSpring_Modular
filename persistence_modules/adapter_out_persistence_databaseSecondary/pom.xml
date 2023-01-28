@@ -10,7 +10,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>adapter_out_persistence_databasePrimary</artifactId>
+    <artifactId>adapter_out_persistence_databaseSecondary</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>

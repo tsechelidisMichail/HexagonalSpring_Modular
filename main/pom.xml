@@ -35,7 +35,21 @@
 
         <dependency>
             <groupId>tsechelidisMichail</groupId>
+            <artifactId>adapter_out_persistence_databaseSecondary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>tsechelidisMichail</groupId>
             <artifactId>web_account</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>tsechelidisMichail</groupId>
+            <artifactId>web_movie</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>runtime</scope>
         </dependency>
