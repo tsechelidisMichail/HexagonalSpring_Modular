@@ -25,15 +25,15 @@
         <module>domain_imp</module>
         <module>web_modules/web_account</module>
         <module>main</module>
-        <module>persistence_modules/application_port_out_queries</module>
-        <module>persistence_modules/adapter_out_persistence_databasePrimary</module>
+        <module>persistence_modules/queries</module>
+        <module>persistence_modules/databasePrimary</module>
         <module>web_modules/web_movie</module>
-        <module>persistence_modules/adapter_out_persistence_databaseSecondary</module>
+        <module>persistence_modules/databaseSecondary</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -62,7 +62,6 @@
             <version>23.0.0</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
 
 </project>

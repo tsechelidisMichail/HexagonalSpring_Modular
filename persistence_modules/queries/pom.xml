@@ -7,9 +7,10 @@
         <groupId>tsechelidisMichail</groupId>
         <artifactId>HexagonalSpring_Modular</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>domain_imp</artifactId>
+    <artifactId>queries</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
