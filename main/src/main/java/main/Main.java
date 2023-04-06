@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@SpringBootApplication(scanBasePackages = {"main","domain","domain_imp","web","queries","persistence"})
+@SpringBootApplication(scanBasePackages = {"domain_imp","web","persistence"})
 @EntityScan("persistence")
 public class Main {
 

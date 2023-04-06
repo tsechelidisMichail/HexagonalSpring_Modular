@@ -13,7 +13,7 @@
 
     <groupId>tsechelidisMichail</groupId>
     <artifactId>HexagonalSpring_Modular</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
 
     <name>HexagonalSpring_Modular</name>
     <description>Hexagonal web application with spring</description>
@@ -21,13 +21,16 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>main</module>
+
         <module>domain</module>
         <module>domain_imp</module>
+
         <module>web_modules/web_account</module>
-        <module>main</module>
+        <module>web_modules/web_movie</module>
+
         <module>persistence_modules/queries</module>
         <module>persistence_modules/databasePrimary</module>
-        <module>web_modules/web_movie</module>
         <module>persistence_modules/databaseSecondary</module>
     </modules>
 
