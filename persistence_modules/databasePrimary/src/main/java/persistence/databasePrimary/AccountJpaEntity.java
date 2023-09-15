@@ -1,9 +1,8 @@
 package persistence.databasePrimary;
 
 import domain.Account;
+import jakarta.persistence.*;
 import lombok.Data;
-
-import javax.persistence.*;
 
 
 @Entity

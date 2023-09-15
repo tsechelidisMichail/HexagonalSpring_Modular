@@ -1,8 +1,7 @@
 package persistence.databaseSecondary;
 
+import jakarta.persistence.*;
 import lombok.Data;
-
-import javax.persistence.*;
 
 
 @Entity
